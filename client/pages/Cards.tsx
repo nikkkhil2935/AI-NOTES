@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { RouteTester } from "@/components/RouteTester";
 import { Brain } from "lucide-react";
 
 export default function Cards() {
@@ -23,6 +24,7 @@ export default function Cards() {
           </Card>
         </div>
       </div>
+      <RouteTester />
     </div>
   );
 }

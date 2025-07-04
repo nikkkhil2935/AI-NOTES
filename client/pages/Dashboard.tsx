@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 import { UploadZone } from "@/components/dashboard/upload-zone";
+import { RouteTester } from "@/components/RouteTester";
 import { FlashcardGrid } from "@/components/dashboard/flashcard-grid";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Button } from "@/components/ui/button";
@@ -370,6 +371,7 @@ export default function Dashboard() {
           </Tabs>
         </div>
       </div>
+      <RouteTester />
     </div>
   );
 }
