@@ -107,7 +107,7 @@ export default function Index() {
               generate personalized flashcards. Study smarter, not harder.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div className="flex justify-center mb-16">
               <GradientButton size="xl" asChild>
                 <Link to="/dashboard">
                   <Brain className="h-5 w-5 mr-2" />
@@ -115,11 +115,6 @@ export default function Index() {
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Link>
               </GradientButton>
-
-              <Button variant="outline" size="xl" className="group">
-                <Play className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
-                Watch Demo
-              </Button>
             </div>
 
             {/* Stats */}
