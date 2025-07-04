@@ -114,7 +114,6 @@ export function UploadZone({ onUpload, isUploading = false }: UploadZoneProps) {
             onDragLeave={handleDrag}
             onDragOver={handleDrag}
             onDrop={handleDrop}
-            onClick={() => document.getElementById("file-input")?.click()}
           >
             <input
               id="file-input"
@@ -141,7 +140,14 @@ export function UploadZone({ onUpload, isUploading = false }: UploadZoneProps) {
                 </p>
               </div>
 
-              <GradientButton size="lg" className="mt-4">
+              <GradientButton
+                size="lg"
+                className="mt-4"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  document.getElementById("file-input")?.click();
+                }}
+              >
                 <Upload className="h-5 w-5 mr-2" />
                 Choose Files
               </GradientButton>
