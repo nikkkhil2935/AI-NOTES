@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/navbar";
+import { RouteTester } from "@/components/RouteTester";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -297,6 +298,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <RouteTester />
     </div>
   );
 }
